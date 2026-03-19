@@ -1,4 +1,4 @@
-const products = ["Laptop", "Phone", "Headphones", "Monitor"];
+let products = ["Laptop", "Phone", "Headphones", "Monitor"];
 function logFirstProduct() {
   console.log(products[0]);
 }
@@ -20,4 +20,10 @@ module.exports = {
   updateProductName,
   removeLastProduct,
 };
-console.log()
+logFirstProduct();
+addProduct("Tablet");
+console.log(products[products.length - 1]);
+updateProductName(1, "Smartphone");
+console.log(products[1]); 
+removeLastProduct();
+console.log(products[products.length - 1]);
